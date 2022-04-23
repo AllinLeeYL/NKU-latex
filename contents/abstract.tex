@@ -9,7 +9,7 @@
 
 % English abstract
 \newpage
-
+\phantomsection\addcontentsline{toc}{section}{Abstract}\tolerance=500 % make abstract in TOC
 \renewcommand{\abstractname}{\fontsize{14}{21}\textbf{Abstract}}
 \begin{abstract}
 Recently, the use of natural language to access structured data has become a hot topic, and the semantic parsing process of translating natural language into specific SQL statements is the core of the research of natural language interface technology for structured data. In particular, the application of deep neural networks has made many NLP tasks more accurate than humans. I proposed a statistical-based analysis method that encodes the words which are strongly correlated with the aggregation operator in the training set into an additional vector information. Then this vector is inputed into decoding layer model to enhance the prediction accuracy of the aggregation operation operator, which I call Aggregation Strongly Correlated Token Enhanced Prediction (ASCTEP) for subsequent explanation.
