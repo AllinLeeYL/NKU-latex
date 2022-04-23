@@ -1,0 +1,1 @@
+del "main".toc "main".aux "main".out "main".synctex.gz "main".bbl "main".blg "main.log"
