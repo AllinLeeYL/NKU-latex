@@ -4,15 +4,23 @@
 \begin{document}
 \begin{spacing}{1.5}
 
+% just include the pdf format of cover and statement rather than create one on my own
 \includepdf[page=-]{include/cover-and-statement}
 
+% roman page number for abstract and table of content
 \pagenumbering{Roman}
+
 \input{contents/abstract.tex}
 
 \input{contents/TOC.tex}
 
 \newpage
+% arabic page number for normal sections
 \pagenumbering{arabic}
+% head
+\fancyhead{} % clear format before
+\fancyhead[C]{\fontsize{9}{13.5}\leftmark} % head for normal sections
+
 \input{contents/yourChapter.tex}
 
 \input{contents/reference.tex}

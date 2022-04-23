@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.29)  23 APR 2022 15:24
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.29)  23 APR 2022 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -932,14 +932,7 @@ Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-)
-
-Package xeCJK Warning: Unknown CJK family `ZHHEI' is being ignored.
-(xeCJK)                
-(xeCJK)                Try to use `\setCJKfamilyfont{ZHHEI}[...]{...}' to
-(xeCJK)                define it.
-
-[3] (./contents/yourChapter.tex
+) [3] (./contents/yourChapter.tex
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/b/n' undefined
 (Font)              using `TU/SimSun(0)/m/n' instead on input line 2.
@@ -968,12 +961,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 933B8312F0C5C69AD3DDFFA7881C8606;504.
  ) 
 Here is how much of TeX's memory you used:
- 19748 strings out of 478866
- 384872 string characters out of 5865578
- 997268 words of memory out of 5000000
- 39257 multiletter control sequences out of 15000+600000
+ 19726 strings out of 478866
+ 383466 string characters out of 5865578
+ 997296 words of memory out of 5000000
+ 39235 multiletter control sequences out of 15000+600000
  407544 words of font info for 83 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 106i,17n,107p,875b,2163s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,17n,107p,429b,2199s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (9 pages).
