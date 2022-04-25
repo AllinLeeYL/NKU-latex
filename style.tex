@@ -24,45 +24,44 @@
 \newcommand{\emphasize}[1]{\emph{#1}} % emphasize
 \newcommand{\keyword}[1]{\textbf{#1}} % keyword
 \newcommand{\refcode}[1]{Code \ref{#1}} % code reference
-\newcommand{\reffig}[1]{图\ref{#1}} % graph reference
-\newcommand{\reftab}[1]{表\ref{#1}} % table referenece
+\newcommand{\counterclear}{\setcounter{equation}{0} \setcounter{figure}{0}}
+% equation
 \newcommand{\refeq}[1]{式(\ref{#1})} % equation reference
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+% figure
+\newcommand{\reffig}[1]{图\ref{#1}} % graph reference
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+% table
+\newcommand{\reftab}[1]{表\ref{#1}} % table referenece
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
 
 % abstract
 \setlength{\absleftindent}{0pt}
 \setlength{\absrightindent}{0pt}
-
 % font
 \setmainfont{Times New Roman}
 \setCJKmainfont{SimSun}
 \ctexset{
 	abstractname={\fontsize{14}{21}\CJKfamily{zhhei}摘\quad 要},
 	contentsname={\fontsize{16}{24}\CJKfamily{zhhei}目\quad 录},
-	bibname={参考文献}
-}
-
+	bibname={参考文献}}
 % format of list
 \setitemize{topsep=0em, itemindent=2em, itemsep=0em}
 \setenumerate{topsep=0em, itemindent=2em, itemsep=0em}
-
 % format of caption
 \captionsetup{labelsep=space}
-
 % format of TOC
 \renewcommand{\thesection}{第\zhnum{section}章}
 \renewcommand{\thesubsection}{第\zhnum{subsection}节}
-\titlecontents{section}[3.3em]{}{\contentslabel{3.3em}}{\hspace*{-3.3em}}{\titlerule*[1pc]{.}\contentspage}
-\titlecontents{subsection}[4.3em]{}{\contentslabel{3.3em}}{\hspace*{-4.3em}}{\titlerule*[1pc]{.}\contentspage}
-
+\titlecontents{section}[4.3em]{\fontsize{15}{22.5}}{\contentslabel{4.3em}}{\hspace*{-4.3em}}{\titlerule*[1pc]{.}\contentspage}
+\titlecontents{subsection}[5.3em]{\fontsize{14}{21}}{\contentslabel{4.3em}}{\hspace*{-5.3em}}{\titlerule*[1pc]{.}\contentspage}
 % title format
-\titleformat{\section}{\centering\bfseries\fontsize{15}{23}}{\thesection \quad}{0em}{}
-\titleformat{\subsection}{\centering\bfseries\fontsize{14}{21}}{\thesubsection \quad}{0em}{}
-
+\titleformat{\section}{\centering\bfseries\fontsize{15}{23}}{第\zhnum{section}章 \quad}{0em}{}
+\titleformat{\subsection}{\centering\bfseries\fontsize{14}{21}}{第\zhnum{subsection}节 \quad}{0em}{}
 % header and foot
 \fancyhf{}
 \fancyfoot[C]{\fontsize{9}{13.5}\thepage}
 \pagestyle{fancy}
-
 % format of code
 \renewcommand{\lstlistingname}{代码}
 \lstset{
