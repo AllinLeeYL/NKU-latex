@@ -23,8 +23,10 @@
 
 \newcommand{\emphasize}[1]{\emph{#1}} % emphasize
 \newcommand{\keyword}[1]{\textbf{#1}} % keyword
-\newcommand{\refcode}[1]{Code \ref{#1}} % code reference
 \newcommand{\counterclear}{\setcounter{equation}{0} \setcounter{figure}{0}}
+% code 
+\newcommand{\refcode}[1]{Code \ref{#1}} % code reference
+% \renewcommand{\thelstlisting}{\arabic{section}.\arabic{lstlisting}}
 % equation
 \newcommand{\refeq}[1]{式(\ref{#1})} % equation reference
 \renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
@@ -54,7 +56,7 @@
 \renewcommand{\thesection}{第\zhnum{section}章}
 \renewcommand{\thesubsection}{第\zhnum{subsection}节}
 \titlecontents{section}[4.3em]{\fontsize{15}{22.5}}{\contentslabel{4.3em}}{\hspace*{-4.3em}}{\titlerule*[1pc]{.}\contentspage}
-\titlecontents{subsection}[5.3em]{\fontsize{14}{21}}{\contentslabel{4.3em}}{\hspace*{-5.3em}}{\titlerule*[1pc]{.}\contentspage}
+\titlecontents{subsection}[6.3em]{\fontsize{14}{21}}{\contentslabel{4.3em}}{\hspace*{-6.3em}}{\titlerule*[1pc]{.}\contentspage}
 % title format
 \titleformat{\section}{\centering\bfseries\fontsize{15}{23}}{第\zhnum{section}章 \quad}{0em}{}
 \titleformat{\subsection}{\centering\bfseries\fontsize{14}{21}}{第\zhnum{subsection}节 \quad}{0em}{}
